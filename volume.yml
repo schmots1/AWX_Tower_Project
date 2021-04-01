@@ -1,5 +1,7 @@
 - hosts: localhost
   name: ONTAP
+  environment:
+    ANSIBLE_INVENTORY_ENABLED: 'ini'
   collections:
   - netapp.ontap
   gather_facts: false
